@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-title {
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
