@@ -1,4 +1,4 @@
-import { Group, Button, Title } from "@mantine/core";
+import { Group, Button, Title, Box, Text } from "@mantine/core";
 import { Link } from "react-router";
 import "./Navbar.css";
 
@@ -6,9 +6,15 @@ function Navbar() {
   return (
     <div className="navbar">
       <Group justify="space-between">
-        <Title order={3} className="navbar-title">
-          SG Plate Collection
-        </Title>
+        <Box>
+          <Title order={3} fw={700}>
+            SG Plate Collection
+          </Title>
+
+          <Text size="xs" c="dimmed" fw={500} mt={-2}>
+            Made by YJSpotsExoticPlates
+          </Text>
+        </Box>
 
         <Group>
           <Button component={Link} to="/" variant="light">

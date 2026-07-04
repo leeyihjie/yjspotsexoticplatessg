@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <>
-      <Title className="page-title">License Plates</Title>
+      <Title className="page-title">Singapore License Plates</Title>
 
       <Grid>
         {plates.map((plate) => (
