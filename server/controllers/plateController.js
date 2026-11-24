@@ -133,7 +133,7 @@ exports.getPlateImages = (req, res) => {
 // Search plates
 exports.searchPlates = (req, res) => {
   const plate = req.query.plate.toUpperCase();
-
+  console.log("searchPlate called. Requested Plate: ", plate);
   const sql = `
         SELECT
             id,
@@ -149,6 +149,8 @@ exports.searchPlates = (req, res) => {
       console.error("searchPlates error: ", err);
       return res.status(500).json(err);
     }
+
+    console.log("Number of plates found: ", result.length);
     res.json(result);
   });
 };

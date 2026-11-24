@@ -17,6 +17,7 @@ function Search() {
   const [results, setResults] = useState([]);
 
   const handleSearch = async () => {
+    console.log("Plate query to be submitted", { query });
     const res = await axios.get(`http://localhost:5000/search?plate=${query}`);
     setResults(res.data);
   };

@@ -11,5 +11,6 @@ app.use("/uploads", express.static("uploads"));
 app.use("/", plateRoutes);
 
 app.listen(5000, () => {
+  console.log("Server code updated!");
   console.log("Server running on port 5000");
 });
